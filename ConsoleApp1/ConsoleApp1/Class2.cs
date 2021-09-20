@@ -8,45 +8,16 @@ namespace HW14092021
 {
     public class Prece
     {
-        private double _garums;
-        public double Garums
-        {
-            get
-            {
-                return _garums;
-            }
-            set
-            {
-                _garums = value;
-            }
-        }
 
-        private double _augstums;
-        public double Augstums
+        public Prece (double garums, double augstums, double svars)
         {
-            get
-            {
-                return _augstums;
-            }
-            set
-            {
-                _augstums = value;
-            }
+            Garums = garums;
+            Augstums = augstums;
+            Svars = svars;
         }
-
-
-        private double _svars;
-        public double Svars
-        {
-            get
-            {
-                return _svars;
-            }
-            set
-            {
-                _svars = value;
-            }
-        }
+        public double Garums { get; }
+        public double Augstums { get; }
+        public double Svars { get; }
 
 
         public string PrecesParametri()

@@ -26,25 +26,9 @@ namespace HW14092021
             //============================================
 
 
-            var prece = new Prece();
+            var prece = new Prece (25, 15, 125);
 
-            Console.WriteLine($"Ievadiet preces augstumu");
-            string Augstums = Console.ReadLine();
-            double Augstums1 = double.Parse(Augstums);
-
-            Console.WriteLine($"Preces garums");
-            string Garums = Console.ReadLine();
-            double Garums1 = double.Parse(Garums);
-
-            Console.WriteLine($"Preces svars");
-            string Svars = Console.ReadLine();
-            double Svars1 = int.Parse(Svars);
-
-
-            prece.Augstums = Augstums1;
-            prece.Garums = Garums1;
-            prece.Svars = Svars1;
-
+          
             string precesparametri = prece.PrecesParametri();
             Console.WriteLine(precesparametri);
 
